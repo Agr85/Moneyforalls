@@ -81,18 +81,10 @@ WSGI_APPLICATION = 'cursos.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-   """  'default': dj_database_url.config(
+    'default': dj_database_url.config(
         default='sqlite:///db.sqlite3',
         conn_max_age=600
-    ) """
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cursosdb',
-        'USER': 'cursosdb_user',
-        'PASSWORD': 'Vlp8dj6XW86NLyy4cD3dgrf8HzwQG8wX',
-        'HOST': 'dpg-chdrjlu7avj22bgoph90-a.oregon-postgres.render.com',
-        'PORT': '5432',
-    }
+    )
 }
 
 
@@ -135,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 if not DEBUG:
-    
+
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
