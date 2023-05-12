@@ -25,7 +25,7 @@ const initDataTable = async () => {
 
 const listCursos = async () => {
     try {
-        const response = await fetch("dpg-chdrjlu7avj22bgoph90-a.oregon-postgres.render.com:5432/app/list_cursos/");
+        const response = await fetch("https://moneyforalls-test.onrender.com/app/list_cursos/");
         const data = await response.json();
 
         let content = ``;
