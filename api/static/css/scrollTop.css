@@ -8,6 +8,36 @@ body {
     background: #34495e;
 } */
 
+/* Estilos para el contenedor del scroll */
+.scroll-container {
+    max-height: 80vh; /* Establece una altura máxima relativa al tamaño de la ventana */
+    overflow-y: scroll; /* Habilita el scroll vertical cuando el contenido excede la altura máxima */
+  }
+  
+  /* Estilos para el scroll */
+  .scroll-container::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 4px; /* Borde redondeado del thumb */
+  }
+  
+  /* Media queries para ajustar el scroll en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .scroll-container {
+      max-height: 60vh; /* Ajusta la altura máxima para dispositivos móviles */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scroll-container {
+      max-height: 50vh; /* Ajusta la altura máxima para pantallas más pequeñas */
+    }
+  }
+
+
 svg {
     transform-origin: left top; 
     transform: scale(0.4);

@@ -23,9 +23,10 @@ const initDataTable = async () => {
     dataTableIsInitialized = true;
 };
 
+/* list_cursos local_url-> http://127.0.0.1:8000/app/list_cursos/  online_url-> https://moneyforalls-test.onrender.com/app/list_cursos/ */
 const listCursos = async () => {
     try {
-        const response = await fetch("https://moneyforalls-test.onrender.com/app/list_cursos/");
+        const response = await fetch("http://127.0.0.1:8000/app/list_cursos/");
         const data = await response.json();
 
         let content = ``;
