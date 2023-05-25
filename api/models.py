@@ -16,3 +16,14 @@ class Cursos(models.Model):
 
     class Meta:
         db_table = 'cursos'
+
+class Registro(models.Model):
+    nombre = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    sexo = models.CharField(max_length=10)
+    pais = models.CharField(max_length=100)
+    estoy_de_acuerdo = models.BooleanField()
+    token = models.CharField(max_length=32)
+
+    def __str__(self):
+        return self.nombre
