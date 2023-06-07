@@ -8,6 +8,9 @@ from .forms import RegistroForm
 def index(request):
     return render(request, 'index.html')
 
+def services(request):
+    return render(request, 'services.html')
+
 def login(request):
      if not request.session.get('email'):
         # El usuario no existe la session, redirigir a la página de registro

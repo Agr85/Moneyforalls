@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-image: url("/static/img/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.modal-backdrop {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    background-position-y: top;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3d96f5;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #970984;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #b413e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
